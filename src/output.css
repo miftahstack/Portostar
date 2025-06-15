@@ -13,6 +13,7 @@
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
@@ -185,6 +186,9 @@
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
@@ -229,6 +233,9 @@
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
@@ -283,6 +290,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -359,6 +369,9 @@
   .max-w-\[1170px\] {
     max-width: 1170px;
   }
+  .max-w-\[1170pxx\] {
+    max-width: 1170pxx;
+  }
   .max-w-\[1177\] {
     max-width: 1177;
   }
@@ -407,6 +420,9 @@
   .rounded-\[20px\] {
     border-radius: 20px;
   }
+  .rounded-\[40px\] {
+    border-radius: 40px;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -426,11 +442,29 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-\[\#404040\] {
+    border-color: #404040;
+  }
+  .bg-\[\#333333\] {
+    background-color: #333333;
+  }
+  .bg-\[\#404040\] {
+    background-color: #404040;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
   }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
@@ -540,6 +574,9 @@
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
   }
+  .py-7\.5 {
+    padding-block: calc(var(--spacing) * 7.5);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
@@ -551,6 +588,9 @@
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .py-25 {
+    padding-block: calc(var(--spacing) * 25);
   }
   .py-30 {
     padding-block: calc(var(--spacing) * 30);
@@ -613,6 +653,9 @@
   }
   .text-\[20px\] {
     font-size: 20px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
   }
   .text-\[40px\] {
     font-size: 40px;
