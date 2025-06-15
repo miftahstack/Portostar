@@ -7,9 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
@@ -216,6 +218,9 @@
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
+  .mr-5 {
+    margin-right: calc(var(--spacing) * 5);
+  }
   .mr-\[100px\] {
     margin-right: 100px;
   }
@@ -246,6 +251,30 @@
   .table {
     display: table;
   }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-13 {
+    height: calc(var(--spacing) * 13);
+  }
+  .h-13\.5 {
+    height: calc(var(--spacing) * 13.5);
+  }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-25 {
+    height: calc(var(--spacing) * 25);
+  }
   .h-\[100px\] {
     height: 100px;
   }
@@ -255,8 +284,35 @@
   .h-screen {
     height: 100vh;
   }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-13 {
+    width: calc(var(--spacing) * 13);
+  }
+  .w-13\.5 {
+    width: calc(var(--spacing) * 13.5);
+  }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-25 {
+    width: calc(var(--spacing) * 25);
+  }
   .w-50 {
     width: calc(var(--spacing) * 50);
+  }
+  .w-52 {
+    width: calc(var(--spacing) * 52);
   }
   .w-\[\%\] {
     width: %;
@@ -272,6 +328,9 @@
   }
   .w-\[33\] {
     width: 33;
+  }
+  .w-\[40\%\] {
+    width: 40%;
   }
   .w-\[45\%\] {
     width: 45%;
@@ -391,14 +450,32 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .fill-none {
+    fill: none;
+  }
+  .fill-red-500 {
+    fill: var(--color-red-500);
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
+  }
+  .p-7\.5 {
+    padding: calc(var(--spacing) * 7.5);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -421,14 +498,26 @@
   .px-50 {
     padding-inline: calc(var(--spacing) * 50);
   }
+  .px-70 {
+    padding-inline: calc(var(--spacing) * 70);
+  }
   .px-80 {
     padding-inline: calc(var(--spacing) * 80);
   }
   .px-100 {
     padding-inline: calc(var(--spacing) * 100);
   }
+  .px-120 {
+    padding-inline: calc(var(--spacing) * 120);
+  }
   .px-150 {
     padding-inline: calc(var(--spacing) * 150);
+  }
+  .px-210 {
+    padding-inline: calc(var(--spacing) * 210);
+  }
+  .px-820 {
+    padding-inline: calc(var(--spacing) * 820);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -475,8 +564,20 @@
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
+  .pr-4 {
+    padding-right: calc(var(--spacing) * 4);
+  }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
   .pr-20 {
     padding-right: calc(var(--spacing) * 20);
+  }
+  .pr-30 {
+    padding-right: calc(var(--spacing) * 30);
+  }
+  .pr-40 {
+    padding-right: calc(var(--spacing) * 40);
   }
   .pr-50 {
     padding-right: calc(var(--spacing) * 50);
@@ -504,17 +605,26 @@
   .text-\[14px\] {
     font-size: 14px;
   }
+  .text-\[16pc\] {
+    font-size: 16pc;
+  }
   .text-\[16px\] {
     font-size: 16px;
   }
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .text-\[44px\] {
     font-size: 44px;
   }
   .text-\[48px\] {
     font-size: 48px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
   }
   .text-\[60px\] {
     font-size: 60px;
@@ -550,6 +660,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[1\] {
+    color: 1;
+  }
   .text-\[48\] {
     color: 48;
   }
@@ -561,6 +674,9 @@
   }
   .text-gray-400 {
     color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-gray-600 {
     color: var(--color-gray-600);
